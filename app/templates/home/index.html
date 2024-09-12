@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Página Inicial
+{% endblock %}
+
+{% block content %}
+    {% set navbar_brand = 'Play Teste' %}
+    {% set navbar_items = [
+        {'label': 'Home', 'url': url_for('home.home'), 'active': True},
+        {'label': 'Contato', 'url': '#', 'active': False}
+    ] %}
+    {% include 'includes/navbar.html'  %}
+{% endblock %}
+
