@@ -1,6 +1,6 @@
 import re
 from playwright.sync_api import Page, expect
-from tests.record import record
+from app.tests.record import record
 
 
 def test_example(page: Page) -> None:

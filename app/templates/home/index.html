@@ -5,11 +5,27 @@ Página Inicial
 {% endblock %}
 
 {% block content %}
-    {% set navbar_brand = 'Play Teste' %}
-    {% set navbar_items = [
-        {'label': 'Home', 'url': url_for('home.home'), 'active': True},
-        {'label': 'Contato', 'url': '#', 'active': False}
-    ] %}
-    {% include 'includes/navbar.html'  %}
-{% endblock %}
+        <div class="container-fluid">
+            {% set navbar_brand = 'Play Teste' %}
+            {% set navbar_items = [
+                {'label': 'Home', 'url': url_for('home.home'), 'active': True},
+                {'label': 'Contato', 'url': '#', 'active': False}
+            ] %}
+            {% include 'includes/navbar.html'  %}
+        </div>
 
+        <div class="container">
+            <div class="row">
+                {% for folder in folders %}
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ folder }}</h5>
+                                <a href="{{ url_for('pagtest.folder_content', folder_name=folder) }}" class="btn btn-primary">Veja o Conteúdo</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>    
+    {% endblock %}

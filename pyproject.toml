@@ -8,6 +8,9 @@ packages = [{include = "playwright_python"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+playwright = "^1.47.0"
+flask = "^3.0.3"
+pytest-playwright = "^0.5.2"
 
 
 [build-system]

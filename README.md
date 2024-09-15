@@ -34,3 +34,11 @@ Após ativação do ambiente instale os navegadores do Playwright
 playwright install
 ```
 
+## Primeiro Teste
+
+Para fazer um primeiro teste do playwright rode o comando
+```sh
+pytest app/tests/crmdev/login.py
+```
+
+
