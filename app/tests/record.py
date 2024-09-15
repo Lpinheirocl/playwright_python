@@ -4,7 +4,7 @@ def record(test):
     with sync_playwright() as p:
         browser = p.firefox.launch()
 
-        context = browser.new_context(record_video_dir='.midia')
+        context = browser.new_context(record_video_dir='midia')
 
         page = context.new_page()
 
