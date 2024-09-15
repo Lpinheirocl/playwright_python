@@ -3,5 +3,6 @@
 __pycache__
 .pytest_cache
 .midia
+midia
 poetry.lock
 trace.zip
