@@ -2,7 +2,6 @@ import os
 from playwright.sync_api import Page, expect
 from app.tests.record.record import record
 
-
 def test_example(page: Page) -> None:
     page.goto("https://dev-crm01.ape11.com.br/")
     page.get_by_placeholder("email ou usuário").click()

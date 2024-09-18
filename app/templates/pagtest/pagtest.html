@@ -1,12 +1,20 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Conteúdo da Pasta {{ folder_name }}
+{{ folder_name }}
 {% endblock %}
 
 {% block content %}
+        <div class="container-fluid">
+            {% set navbar_brand = 'Play Teste' %}
+            {% set navbar_items = [
+                {'label': 'Home', 'url': url_for('home.home'), 'active': True},
+                {'label': 'Contato', 'url': '#', 'active': False}
+            ] %}
+            {% include 'includes/navbar.html'  %}
+        </div>
     <div class="container">
-        <h2>Conteúdo da Pasta: {{ folder_name }}</h2>
+        <h2>Teste: {{ folder_name }}</h2>
 
         <!-- Listagem dos arquivos .py com botão para executar -->
         <ul class="list-group">

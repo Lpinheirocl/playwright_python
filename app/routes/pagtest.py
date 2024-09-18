@@ -10,7 +10,7 @@ def folder_content(folder_name):
     directory_path = os.path.join(os.path.dirname(__file__), '../tests', folder_name)
     
     # Liste os arquivos .py no diretório
-    py_files = [f for f in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, f)) and f.endswith('.py')]
+    py_files = [f for f in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, f)) and f.endswith('.py') and f != '__init__.py']
 
     return render_template('pagtest/pagtest.html', folder_name=folder_name, py_files=py_files)
 
