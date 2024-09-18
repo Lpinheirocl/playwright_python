@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "playwright-python"
+version = "0.1.0"
+description = "play test"
+authors = ["Lucas Pinheiro <lucas.pinheiro1014@gmail.com>"]
+readme = "README.md"
+packages = [{include = "playwright_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
