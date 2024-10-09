@@ -34,6 +34,12 @@ Após ativação do ambiente instale os navegadores do Playwright
 playwright install
 ```
 
+Caso os pytest nao funcionar local crie um arquivo "pytest.ini" na raiz do projeto e passe o seguinte codigo 
+```sh
+[pytest]
+pythonpath = .
+```
+
 ## Primeiro Teste
 
 Para fazer um primeiro teste do playwright rode o comando

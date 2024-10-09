@@ -5,15 +5,8 @@ Página Inicial
 {% endblock %}
 
 {% block content %}
-        <div class="container-fluid">
-            {% set navbar_brand = 'Play Teste' %}
-            {% set navbar_items = [
-                {'label': 'Home', 'url': url_for('home.home'), 'active': True},
-                {'label': 'Contato', 'url': '#', 'active': False}
-            ] %}
-            {% include 'includes/navbar.html'  %}
-        </div>
 
+        <br>
         <div class="container">
             <div class="row">
                 {% for folder in folders %}
@@ -21,7 +14,7 @@ Página Inicial
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">{{ folder }}</h5>
-                                <a href="{{ url_for('pagtest.folder_content', folder_name=folder) }}" class="btn btn-primary">Veja o Conteúdo</a>
+                                <a href="{{ url_for('pagtest.folder_content', folder_name=folder) }}" class="btn btn-primary">Veja os Testes</a>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,10 @@
+[
+    {
+        "url": "https://playwright.dev",
+        "expected_title": "Playwright"
+    },
+    {
+        "url": "https://example.com",
+        "expected_title": "Example Domain"
+    }
+]
